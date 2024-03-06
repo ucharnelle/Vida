@@ -15,7 +15,7 @@ body {
 }
 
 header {
-    background-color: #f5f5f5;
+    background-color: grey;
     padding: 10px 20px;
 }
 
@@ -41,23 +41,23 @@ nav a {
     color: #000;
 }
 
-main {
-    padding: 20px;
-}
-
-.contact-section {
-    padding: 20px;
-}
-
-.contact-info {
-    margin-bottom: 20px;
-}
-
-.social-media {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
+ .box{
+        display:flex;
+        flex-direction: column;
+        float: left;
+        border: 10px black;
+        padding: 20px;
+        background-color:#38b464;
+        margin:  auto;
+        height: 75%;
+        justify-items: left;
+        align-content: flex-start;
+        margin-top:100px;
+        }
+      iframe{
+        float:right;
+        margin-top: 80px;
+        }
 footer {
     background-color: #f5f5f5;
     padding: 10px 20px;
@@ -77,41 +77,19 @@ footer {
         </nav>
     </header>
     <main>
-        <section class="contact-section">
-            <h2>Contact Me</h2>
-            <div class="contact-info">
-                <p><strong>Address:</strong> 123 Main Street, Anytown, CA 12345</p>
-                <p><strong>Email:</strong> youremail@example.com</p>
-                <p><strong>Phone:</strong> (555) 555-5555</p>
-                <ul class="social-media">
-                    <li><a href="https://www.facebook.com/"><img src="facebook-icon.png" alt="Facebook"></a></li>
-                    <li><a href="https://twitter.com/"><img src="twitter-icon.png" alt="Twitter"></a></li>
-                    <li><a href="https://www.instagram.com/"><img src="instagram-icon.png" alt="Instagram"></a></li>
-                </ul>
-            </div>
-            <div class="map-container">
-                <h2>Find Me Here</h2>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1mfwl!2m8!3d34.0522349!4d-118.24368419999999!5f12!6f!7m27!8d1!9m1!11f!12m4!13f1!14m2!15d-118.24368419999999!16l!18m1!19m1!20b1!21d34.0522349!22c5HzB25y2zRYeAA!23a1!24sim18!25d3!27c0!3f0" width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-            <div class="contact-form">
-                <h2>Get in Touch</h2>
-                <form action="your_form_action.php" method="post">
-                    <div class="form-group">
-                        <label for="name">Name:</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message:</label>
-                        <textarea id="message" name="message" rows="5" required></textarea>
-                    </div>
-                    <button type="submit">Send Message</button>
-                </form>
-            </div>
-        </section>
+          <form class="Form"> 
+            <h1>Contact Us</h1><br>
+            <label for="name">Your name</label>
+            <input type="text" id="name" name="name" placeholder="Your name.."><br>
+            <label for="email">Your email</label>
+            <input type="text" id="email" name="email" placeholder="Your email.."><br>
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="Subject.."><br>
+            <label for="message">Your message (optional)</label>
+            <textarea id="message" name="message" placeholder="Write something.." rows="5" cols="55"></textarea><br><br>
+            <button type="submit" style="width:150px">Submit</button>
+        </form>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15950.338044879516!2d30.089773087158196!3d-1.9173630999999984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19dca1b826518dd9%3A0x62c6160d41e8f88c!2sKepler%20University!5e0!3m2!1sen!2srw!4v1709379101118!5m2!1sen!2srw" width="600" height="700" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" margin-top="30"></iframe>
     </main>
     <footer>
         <p style="color:black;">&copy; 2024 Charnelle Twahirwa. All rights reserved.</p>
