@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #f5f5f5;
+    padding: 10px 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+}
+
+main {
+    padding: 20px;
+}
+
+.contact-section {
+    padding: 20px;
+}
+
+.contact-info {
+    margin-bottom: 20px;
+}
+
+.social-media {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+footer {
+    background-color: #f5f5f5;
+    padding: 10px 20px;
+    text-align: center;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="Index.html">About</a></li>
+                <li><a href="Work.html">Work</a></li>
+                <li><a href="Gallery.html">Gallery</a></li>
+                <li><a href="Contact.hmtl">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="contact-section">
+            <h2>Contact Me</h2>
+            <div class="contact-info">
+                <p><strong>Address:</strong> 123 Main Street, Anytown, CA 12345</p>
+                <p><strong>Email:</strong> youremail@example.com</p>
+                <p><strong>Phone:</strong> (555) 555-5555</p>
+                <ul class="social-media">
+                    <li><a href="https://www.facebook.com/"><img src="facebook-icon.png" alt="Facebook"></a></li>
+                    <li><a href="https://twitter.com/"><img src="twitter-icon.png" alt="Twitter"></a></li>
+                    <li><a href="https://www.instagram.com/"><img src="instagram-icon.png" alt="Instagram"></a></li>
+                </ul>
+            </div>
+            <div class="map-container">
+                <h2>Find Me Here</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1mfwl!2m8!3d34.0522349!4d-118.24368419999999!5f12!6f!7m27!8d1!9m1!11f!12m4!13f1!14m2!15d-118.24368419999999!16l!18m1!19m1!20b1!21d34.0522349!22c5HzB25y2zRYeAA!23a1!24sim18!25d3!27c0!3f0" width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="contact-form">
+                <h2>Get in Touch</h2>
+                <form action="your_form_action.php" method="post">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p style="color:black;">&copy; 2024 Sports Enthusiast. All rights reserved.</p>
+    </footer>
+</body>
+</html>
