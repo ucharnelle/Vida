@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
 *{
     color:black;
@@ -41,7 +42,7 @@ nav a {
     color: #000;
 }
 
- .box{
+ .Form{
         display:flex;
         flex-direction: column;
         float: left;
@@ -54,6 +55,22 @@ nav a {
         align-content: flex-start;
         margin-top:100px;
         }
+        input[type=text], textarea {
+            width: 80%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: none;
+            border-bottom: 2px solid grey;
+        }
+        input[type=text], textarea {
+            width: 80%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: none;
+            border-bottom: 2px solid grey;
+        }
       iframe{
         float:right;
         margin-top: 80px;
@@ -61,6 +78,67 @@ nav a {
 footer {
     background-color: #f5f5f5;
     padding: 10px 20px;
+    text-align: center;
+}
+    .my-details{
+        overflow: hidden;
+        padding: 3em 0em;
+        background: #E3F0F7;
+        text-align: center;
+        margin-top: 5em;
+}
+         
+#footer #col1,
+#footer #col2,
+#footer #col3{
+    float: left;
+    width: 320px;
+    padding: 0px 40px 0px 40px;
+}
+         
+#footer #icon{
+    display: block;
+    margin-bottom: 1em;
+    font-size: 3em;
+}
+        .copyright
+{
+    overflow: hidden;
+    padding: 3em 0em;
+    border-top: 20px solid rgba(255, 255, 255, 0.08);
+    text-align: center;
+    background: #4CAF50;
+}
+        .copyright p
+{
+    letter-spacing: 1px;
+    font-size: 0.90em;
+    color: rgba(255, 255, 255, 0.6);
+}
+         
+.copyright a
+{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.8);
+}
+        ul.contact{
+    margin: 0;
+    padding: 2em 0em 0em 0em;
+    list-style: none;
+}
+         
+ul.contact li{
+    display: inline-block;
+    padding: 0em 0.10em;
+    font-size: 1em;
+}
+        ul.contact li a{
+    color: #FFF;
+    display: inline-block;
+    background: #4C93B9;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
     text-align: center;
 }
     </style>
@@ -92,7 +170,54 @@ footer {
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15950.338044879516!2d30.089773087158196!3d-1.9173630999999984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19dca1b826518dd9%3A0x62c6160d41e8f88c!2sKepler%20University!5e0!3m2!1sen!2srw!4v1709379101118!5m2!1sen!2srw" width="600" height="700" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" margin-top="30"></iframe>
     </main>
     <footer>
-        <p style="color:black;">&copy; 2024 Charnelle Twahirwa. All rights reserved.</p>
+         <footer id="footer">
+        <div class="my-details">
+            <div class="row">
+                <div id="col1">
+                    <span id="icon" class="fa fa-map-marker"></span>
+ 
+                    <span>
+                        Kinyinya Gasabo, Rwanda
+                    </span>
+                </div>
+ 
+                <div id="col2">
+                    <span id="icon" class="fa fa-phone"></span>
+ 
+                    <span>
+                        Telephone: +2507802255621
+                    </span>
+                </div>
+ 
+                <div id="col3">
+                    <span id="icon" class="fa fa-envelope"></span>
+                    <span>charnelle.twahirwa22@keplercollege.ac.rw</span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© All rights reserved | Charnelle Twahirwa.</p>
+ 
+            <ul class="contact">
+                <li>
+                    <a href="#" class="fa fa-twitter">
+ 
+                    </a>
+                </li>
+ 
+                <li>
+                    <a href="#" class="fa fa-facebook">
+ 
+                    </a>
+                </li>
+ 
+                <li>
+                    <a href="#" class="fa fa-pinterest-p">
+ 
+                    </a>
+                </li>
+            </ul>
+        </div>
     </footer>
 </body>
 </html>
